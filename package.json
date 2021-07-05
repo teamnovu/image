@@ -1,6 +1,6 @@
 {
-  "name": "@nuxt/image",
-  "version": "0.5.1",
+  "name": "@teamnovu/nuxt-image",
+  "version": "0.5.2",
   "description": "Nuxt Image Module",
   "repository": "nuxt/image",
   "license": "MIT",
