@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.1](https://github.com/nuxt/image/compare/v0.5.0...v0.5.1) (2021-07-05)
+
+
+### Features
+
+* add ability to provide fixed srcset ([c275b03](https://github.com/nuxt/image/commit/c275b03c59aeec8d57985f0ab9be8b03ebb6b316))
+* **ipx:** compatible with 0.7.x ([017c335](https://github.com/nuxt/image/commit/017c33514df00267dfa5f05429a573bca39ecc7a))
+
 ## [0.5.0](https://github.com/nuxt/image/compare/v0.4.17...v0.5.0) (2021-07-01)
 
 
