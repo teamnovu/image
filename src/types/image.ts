@@ -37,6 +37,7 @@ export interface CreateImageOptions {
   presets: { [name: string]: ImageOptions }
   provider: string
   screens: Record<string, number>,
+  srcset: number[],
   alias: Record<string, string>,
   domains: string[]
 }

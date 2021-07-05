@@ -211,9 +211,24 @@ function getSizes (ctx: ImageCTX, input: string, opts: ImageSizesOptions) {
     defaultVar.media = ''
   }
 
+  let srcset = []
+
+  if (ctx.options.srcset && ctx.options.srcset.length) {
+    srcset = ctx.options.srcset.map((width) => {
+      const _cHeight = hwRatio ? Math.round(width * hwRatio) : height
+
+      return {
+        src: ctx.$img!(input, { ...opts.modifiers, width, height: _cHeight }, opts),
+        width
+      }
+    })
+  } else {
+    srcset = variants
+  }
+
   return {
     sizes: variants.map(v => `${v.media ? v.media + ' ' : ''}${v.size}`).join(', '),
-    srcset: variants.map(v => `${v.src} ${v.width}w`).join(', '),
+    srcset: srcset.map(v => `${v.src} ${v.width}w`).join(', '),
     src: defaultVar?.src
   }
 }

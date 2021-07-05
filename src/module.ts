@@ -27,6 +27,7 @@ const imageModule: Module<ModuleOptions> = async function imageModule (moduleOpt
       xxl: 1536,
       '2xl': 1536
     },
+    srcset: [],
     internalUrl: '',
     providers: {},
     static: {},
@@ -48,6 +49,7 @@ const imageModule: Module<ModuleOptions> = async function imageModule (moduleOpt
 
   const imageOptions: Omit<CreateImageOptions, 'providers'> = pick(options, [
     'screens',
+    'srcset',
     'presets',
     'provider',
     'domains',
